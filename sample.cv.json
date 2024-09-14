@@ -3,11 +3,12 @@
   "basics": {
     "name": "Stefan Izdrail",
     "label": "Senior Engineer",
-    "image": "",
+    "image": "https://i.imgur.com/TQVwARz.png",
     "email": "stefan@izdrail.com",
     "phone": "(44) 744-821-8899",
     "url": "https://izdrail.com",
-    "summary": "Hello there! I'm **Stefan**, a senior software developer from Romania, now living in the United Kingdom.  \nWith over 13 years of experience, I am passionate about building enterprise applications. Nothing excites me more than tackling a client's problem head-on and selecting the best programming language for the job.",
+    "summary": "Hello there! I'm **Stefan**, a senior software developer from Romania, now living in the United Kingdom.\n With over 13 years of experience, I am passionate about building enterprise applications. Nothing excites me more than tackling a client's problem head-on and selecting the best programming language for the job.",
+
     "location": {
       "address": "38 Deidre Avenue",
       "postalCode": "SS12",
@@ -18,10 +19,16 @@
     "profiles": [
       {
         "network": "Twitter",
-        "username": "thephpteacher"
+        "username": "thephpteacher",
+        "url": "https://twitter.com/thephpteacher"
       },
       {
         "network": "LinkedIn",
+        "username": "thephpteacher",
+        "url": "https://www.linkedin.com/in/thephpteacher/"
+      },
+      {
+        "network": "GitHub",
         "username": "thephpteacher",
         "url": "https://www.linkedin.com/in/thephpteacher/"
       }
@@ -118,16 +125,15 @@
   ],
   "education": [
     {
-      "institution": "University of Bucharest",
-      "url": "https://www.ou.edu/",
+      "institution": "Spiru Haret University",
+      "url": "https://www.spiruharet.ro/en/",
       "area": "Information Technology",
       "studyType": "Bachelor",
       "startDate": "2011-06-01",
       "endDate": "2014-01-01",
       "score": "8.7",
       "courses": [
-        "DB1101 - Computer Science",
-        "CS2011 - C Introduction"
+        "DB1101 - Computer Science"
       ]
     }
   ],
@@ -229,8 +235,10 @@
     {
       "name": "Environmental Science",
       "keywords": [
-        "Ferrets",
-        "Unicorns"
+        "Nature Conservation",
+        "Wildlife Conservation",
+        "Wildlife Management",
+         "Climate Change"
       ]
     },
     {

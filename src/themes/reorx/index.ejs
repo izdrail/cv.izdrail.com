@@ -19,40 +19,48 @@ function hasItems(arr) {
 %>
 
 <!-- Basics -->
+<!-- Basics -->
 <section class="basics-section">
-  <h1><%= cv.basics.name %></h1>
-  <% if (cv.basics.label) { %>
-    <div class="label row subtitle"><%= cv.basics.label %></div>
-  <% } %>
-  <% if (cv.basics.url) { %>
-    <div class="url row">
-      <%- fn.getIconSVG('mdi:link-variant') %>
-      <a href="<%= cv.basics.url %>" target="_blank"><%= fn.noSchemaURL(cv.basics.url) %></a>
+    <!-- Add the user's picture -->
+    <% if (cv.basics.image) { %>
+        <div class="picture row">
+            <img src="<%= cv.basics.image %>" alt="<%= cv.basics.name %>'s picture" class="user-picture">
+        </div>
+    <% } %>
+
+    <h1><%= cv.basics.name %></h1>
+    <% if (cv.basics.label) { %>
+        <div class="label row subtitle"><%= cv.basics.label %></div>
+    <% } %>
+    <% if (cv.basics.url) { %>
+        <div class="url row">
+            <%- fn.getIconSVG('mdi:link-variant') %>
+            <a href="<%= cv.basics.url %>" target="_blank"><%= fn.noSchemaURL(cv.basics.url) %></a>
+        </div>
+    <% } %>
+    <% if (cv.basics.summary) { %>
+        <div class="summary p"><%- fn.renderMarkdown(cv.basics.summary) %></div>
+    <% } %>
+    <div class="contact row">
+        <% if (cv.basics.email) { %>
+            <div class="item">
+                <%- fn.getIconSVG('mdi:email') %>
+                <span><a href="mailto:<%= cv.basics.email %>"><%= cv.basics.email %></a></span>
+            </div>
+        <% } %>
+        <% if (cv.basics.phone) { %>
+            <div class="item">
+                <%- fn.getIconSVG('mdi:phone') %>
+                <span><%= cv.basics.phone %></span>
+            </div>
+        <% } %>
+        <% if (cv.basics.location) { %>
+            <div class="item">
+                <%- fn.getIconSVG('mdi:location') %>
+                <span><%= formatLocation(cv.basics.location) %></span>
+            </div>
+        <% } %>
     </div>
-  <% } %>
-  <% if (cv.basics.summary) { %>
-    <div class="summary p"><%- fn.renderMarkdown(cv.basics.summary) %></div>
-  <% } %>
-  <div class="contact row">
-    <% if (cv.basics.email) { %>
-      <div class="item">
-        <%- fn.getIconSVG('mdi:email') %>
-        <span><a href="mailto:<%= cv.basics.email %>"><%= cv.basics.email %></a></span>
-      </div>
-    <% } %>
-    <% if (cv.basics.phone) { %>
-      <div class="item">
-        <%- fn.getIconSVG('mdi:phone') %>
-        <span><%= cv.basics.phone %></span>
-      </div>
-    <% } %>
-    <% if (cv.basics.location) { %>
-      <div class="item">
-        <%- fn.getIconSVG('mdi:location') %>
-        <span><%= formatLocation(cv.basics.location) %></span>
-      </div>
-    <% } %>
-  </div>
 </section>
 
 
