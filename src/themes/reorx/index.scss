@@ -12,7 +12,7 @@ $lh-p: 1.4;
 
 :root {
   // overide `--color-primary` in your own css
-  --color-primary: #aaa;
+  --color-primary: #333;
 }
 
 .cv-container {
@@ -39,7 +39,7 @@ a, a:visited, a:active {
   text-decoration: none;
 }
 a:hover {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   text-decoration: underline;
 }
 
