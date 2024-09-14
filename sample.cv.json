@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/reorx/jsoncv/master/schema/jsoncv.schema.json",
+  "$schema": "https://raw.githubusercontent.com/izdrail/cv.izdrail.com/master/schema/jsoncv.schema.json",
   "basics": {
     "name": "Stefan Izdrail",
     "label": "Senior Engineer",
@@ -40,7 +40,6 @@
       "location": "Remote, United Kingdom",
       "description": "Imaginary technology company",
       "position": "Contract Developer",
-      "url": "",
       "startDate": "2024-05-01",
       "endDate": "2024-09-01",
       "summary": "Debt Register is a platform for managing and distributing debt. It allows users to track their debt and make payments to the company.",
@@ -96,7 +95,6 @@
       "location": "London, UK",
       "description": "Awesome Software Company that I've firstly founded",
       "position": "Founder",
-      "url": "",
       "startDate": "2014-01-01",
       "endDate": "2023-12-01",
       "summary": "Created a new platform for managing and distributing content across multiple WordPress sites.I've sold this platform to a major media company based in the UK",
@@ -163,27 +161,11 @@
       "summary": "The Matrix has you."
     }
   ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
-    },
-    {
-      "name": "Audio compression for Virtual Reality",
-      "publisher": "VirtuTech",
-      "releaseDate": "2022-01-01",
-      "url": "http://virtutech.example.com",
-      "summary": "Revolutionary compression technology that enhances the audio experience in virtual reality."
-    }
-  ],
   "skills": [
     {
       "name": "PHP",
       "level": "Master",
-      "summary": "Highly skilled in PHP with a strong understanding of PHP programming language, object-oriented programming, and the MVC design pattern. Proficient in developing web applications using PHP.",
+      "summary": "Highly skilled in PHP with a strong understanding of PHP programming language, object-oriented programming, and design patterns.",
       "keywords": [
         "Laravel",
         "Symfony",
@@ -195,7 +177,7 @@
     {
       "name": "Python",
       "level": "Expert",
-      "summary": "Highly skilled in UI design with a strong understanding of design principles, user experience, and industry-standard tools. Proficient in creating visually appealing and user-friendly interfaces for web and mobile applications.",
+      "summary": "Highly skilled in UI design with a strong understanding of design principles, user experience, and industry-standard tools.",
       "keywords": [
         "Django",
         "Flask",
@@ -211,8 +193,17 @@
          "Software",
          "Hardware"
        ]
-     }
-
+     },
+    {
+      "name": "Javascript",
+      "level": "Expert",
+      "summary": "Proficient in javascript. Excellent at understanding the fundamentals of javascript.",
+      "keywords":  [
+        "React",
+        "Vue",
+        "Angular"
+      ]
+    }
   ],
   "languages": [
     {

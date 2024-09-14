@@ -19,16 +19,18 @@ function hasItems(arr) {
 %>
 
 <!-- Basics -->
-<!-- Basics -->
 <section class="basics-section">
-    <!-- Add the user's picture -->
-    <% if (cv.basics.image) { %>
-        <div class="picture row">
-            <img src="<%= cv.basics.image %>" alt="<%= cv.basics.name %>'s picture" class="user-picture">
+    <div class="row">
+        <div class="col-6" style="float: left;">
+             <h1><%= cv.basics.name %></h1>
+         </div>
+        <div class="col-6" style="float: right;">
+            <img width="100" height="100" style="border-radius: 50%" src="<%= cv.basics.image %>" alt="<%= cv.basics.name %>'s picture" class="user-picture">
         </div>
-    <% } %>
+     </div>
 
-    <h1><%= cv.basics.name %></h1>
+    <div style="clear: both;" class="clear"></div>
+
     <% if (cv.basics.label) { %>
         <div class="label row subtitle"><%= cv.basics.label %></div>
     <% } %>
