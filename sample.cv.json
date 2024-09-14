@@ -1,0 +1,292 @@
+{
+  "$schema": "https://raw.githubusercontent.com/reorx/jsoncv/master/schema/jsoncv.schema.json",
+  "basics": {
+    "name": "Stefan Izdrail",
+    "label": "Senior Engineer",
+    "image": "",
+    "email": "stefan@izdrail.com",
+    "phone": "(44) 744-821-8899",
+    "url": "https://izdrail.com",
+    "summary": "Hello there! I'm **Stefan**, a senior software developer from Romania, now living in the United Kingdom.  \nWith over 13 years of experience, I am passionate about building enterprise applications. Nothing excites me more than tackling a client's problem head-on and selecting the best programming language for the job.",
+    "location": {
+      "address": "38 Deidre Avenue",
+      "postalCode": "SS12",
+      "city": "Wickford",
+      "countryCode": "",
+      "region": "England"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "thephpteacher"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "thephpteacher",
+        "url": "https://www.linkedin.com/in/thephpteacher/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Debt Register",
+      "location": "Fairyland, UT",
+      "description": "Imaginary technology company",
+      "position": "Backend Developer",
+      "url": "",
+      "startDate": "2024-05-01",
+      "endDate": "2024-09-01",
+      "summary": "Debt Register is a platform for managing and distributing debt. It allows users to track their debt and make payments to the company.",
+       "highlights": [
+         "Build Rest API",
+         "Improved User Experience",
+         "Improved Deployment Process"
+        ]
+    },
+    {
+      "name": "Lzo Media",
+      "location": "Palo Alto, CA",
+      "description": "Awesome compression company",
+      "position": "Founder",
+      "url": "https://Lzomedia.com",
+      "startDate": "2014-01-01",
+      "endDate": "2023-12-01",
+      "summary": "[Lzo Media](https://Lzomedia.com) is a platform for managing and distributing content across multiple WordPress sites.S old this platform to a major media company based in the UK",
+      "highlights": [
+        "Build an platform for bloggers to monetize their content",
+        "High Trafic Websites and Mobile Apps",
+        "Laravel Integrations"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Cancer Research UK",
+      "position": "Developer",
+      "url": "https://cancerresearchuk.org",
+      "startDate": "2012-01-01",
+      "endDate": "2024-12-12",
+      "summary": "Global movement of free coding clubs for young people.",
+      "highlights": [
+        "Awarded 'Teacher of the Month'"
+      ]
+    },
+    {
+      "organization": "Code for Kids",
+      "position": "Mentor",
+      "url": "http://codeforkids.example.com/",
+      "startDate": "2021-01-01",
+      "endDate": "2022-01-01",
+      "summary": "Non-profit organization dedicated to teaching children how to code.",
+      "highlights": [
+        "Developed curriculum for beginners to advanced students",
+        "Mentored a team of students who won a national coding competition"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Bucharest",
+      "url": "https://www.ou.edu/",
+      "area": "Information Technology",
+      "studyType": "Bachelor",
+      "startDate": "2011-06-01",
+      "endDate": "2014-01-01",
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL",
+        "CS2011 - Java Introduction"
+      ]
+    },
+    {
+      "institution": "MIT",
+      "url": "https://www.mit.edu/",
+      "area": "Computer Science",
+      "studyType": "Master",
+      "startDate": "2015-09-01",
+      "endDate": "2017-06-01",
+      "score": "3.8",
+      "courses": [
+        "CS6240 - Big Data Analytics",
+        "CS5412 - Distributed Systems"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Digital Compression Pioneer Award",
+      "date": "2014-11-01",
+      "awarder": "Techcrunch",
+      "summary": "There is no spoon."
+    },
+    {
+      "title": "Virtual Reality Innovation Award",
+      "date": "2021-06-01",
+      "awarder": "VR Awards",
+      "summary": "The Matrix has you."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Video compression for 3d media",
+      "publisher": "Hooli",
+      "releaseDate": "2014-10-01",
+      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+    },
+    {
+      "name": "Audio compression for Virtual Reality",
+      "publisher": "VirtuTech",
+      "releaseDate": "2022-01-01",
+      "url": "http://virtutech.example.com",
+      "summary": "Revolutionary compression technology that enhances the audio experience in virtual reality."
+    }
+  ],
+  "skills": [
+    {
+      "name": "PHP",
+      "level": "Master",
+      "summary": "Highly skilled in PHP with a strong understanding of PHP programming language, object-oriented programming, and the MVC design pattern. Proficient in developing web applications using PHP.",
+      "keywords": [
+        "Laravel",
+        "Symfony",
+        "CodeIgniter",
+        "CakePHP",
+        "Yii"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "Expert",
+      "summary": "Highly skilled in UI design with a strong understanding of design principles, user experience, and industry-standard tools. Proficient in creating visually appealing and user-friendly interfaces for web and mobile applications.",
+      "keywords": [
+        "Django",
+        "Flask",
+        "FastAPI"
+      ]
+    },
+    {
+      "name": "Hardware Development",
+      "level": "Expert",
+       "summary": "Proficient in hardware design and software development. Excellent at understanding the fundamentals of electronics and software design.",
+       "keywords":  [
+         "Electronics",
+         "Software",
+         "Hardware"
+       ]
+     }
+
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Advanced",
+      "summary": "Proficient in English with a pretty good level of speaking, writing and comprehension abilities. Able to effectively communicate ideas and understand complex information in both personal and professional settings. Demonstrates strong grammar skills and a broad vocabulary."
+    },
+    {
+      "language": "Italian",
+      "fluency": "Medium",
+       "summary": "Proficient in Italian with a pretty good level of speaking, writing and comprehension abilities. Able to effectively communicate ideas and understand complex information in both personal and professional settings. Demonstrates strong grammar skills and a broad vocabulary."
+    },
+    {
+      "language": "Romanian",
+      "fluency": "Native",
+      "summary": "Proficient in Romanian with a pretty good level of speaking, writing and comprehension abilities. Able to effectively communicate ideas and understand complex information in both personal and professional settings. Demonstrates strong grammar skills and a broad vocabulary."
+    }
+  ],
+  "interests": [
+    {
+      "name": "Environmental Science",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    },
+    {
+      "name": "Energy Conservation",
+      "keywords": [
+        "Dragons",
+        "Mermaids"
+      ]
+    }
+
+  ],
+  "references": [
+    {
+      "name": "Jon Basildon",
+      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+    },
+    {
+      "name": "Laurie Bream",
+      "reference": "It is my pleasure to recommend Monica, her exceptional skills and talent were evident during her time at High-Tech Inc. I am confident that she will make a valuable impact at any organization she joins."
+    }
+
+  ],
+  "projects": [
+    {
+      "name": "Laravel Mail",
+      "description": "A Laravel Application for sending and managing email marketing campaigns.",
+      "highlights": [
+        "Won award at AIHacks 2016",
+        "Built by all women team of newbie programmers",
+        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
+      ],
+      "keywords": [
+        "GoogleMaps", "Chrome Extension", "Javascript"
+      ],
+      "startDate": "2016-08-24",
+      "endDate": "2016-08-24",
+      "url": "https://missdirection.example.com",
+      "roles": [
+        "Team lead", "Designer"
+      ],
+      "entity": "Smoogle",
+      "type": "application"
+    },
+    {
+      "name": "Lost in Space",
+      "description": "A cutting-edge navigation app that sends you on wild adventures",
+      "highlights": [
+        "Won the Future Tech Award at the Space Symposium",
+        "Built by a team of skilled astronauts and engineers",
+        "Utilizes advanced technology such as Augmented Reality and AI"
+      ],
+      "keywords": [
+        "Augmented Reality", "AI", "Space navigation"
+      ],
+      "startDate": "2021-07-01",
+      "endDate": "2021-07-01",
+      "url": "https://lostinspace.example.com",
+      "roles": [
+        "Mission Commander", "Navigation Officer"
+      ],
+      "entity": "Cosmic Corp",
+      "type": "Software"
+    }
+  ],
+  "sideProjects": [
+    {
+      "name": "Bebop",
+      "description": "A spaceship that flies",
+      "url": "https://bebop.example.com",
+      "startDate": "2022-01-01",
+      "keywords": [
+        "Aerodynamics", "Space travel", "Rocket science"
+      ]
+    },
+    {
+      "name": "Warp Drive",
+      "description": "A futuristic spaceship that travels faster than light",
+      "url": "https://warpdrive.example.com",
+      "startDate": "2025-01-01",
+      "keywords": [
+        "Quantum physics", "Interstellar travel", "Wormholes"
+      ]
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/reorx/jsoncv/master/schema/jsoncv.schema.json",
+    "version": "v2.0.0",
+    "lastModified": "2023-02-12T22:26:00"
+  }
+}
