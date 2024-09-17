@@ -4,33 +4,36 @@
     "name": "Stefan Izdrail",
     "label": "Senior Engineer",
     "image": "https://i.imgur.com/TQVwARz.png",
-    "email": "stefan@izdrail.com",
+    "email": "bogdan.izdrail@gmail.com",
     "phone": "(44) 744-821-8899",
     "url": "https://izdrail.com",
     "summary": "Hello there! I'm **Stefan**, a senior software developer from Romania, now living in the United Kingdom.\n With over 13 years of experience, I am passionate about building enterprise applications. Nothing excites me more than tackling a client's problem head-on and selecting the best programming language for the job.",
-
     "location": {
       "address": "38 Deidre Avenue",
-      "postalCode": "SS12",
+      "postalCode": "",
       "city": "Wickford",
-      "countryCode": "",
-      "region": "England"
+      "region": "Essex",
+      "country": "England",
+      "countryCode": "GB"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "thephpteacher",
-        "url": "https://twitter.com/thephpteacher"
+        "network": "GitHub",
+        "icon": "github",
+        "username": "izdrail",
+        "url": "https://github.com/izdrail"
       },
       {
         "network": "LinkedIn",
-        "username": "thephpteacher",
-        "url": "https://www.linkedin.com/in/thephpteacher/"
+        "icon": "linkedin",
+        "username": "izdrail",
+        "url": "https://www.linkedin.com/in/izdrail/"
       },
       {
-        "network": "GitHub",
+        "network": "Twitter",
+        "icon": "twitter",
         "username": "thephpteacher",
-        "url": "https://www.linkedin.com/in/thephpteacher/"
+        "url": "https://twitter.com/thephpteacher"
       }
     ]
   },
@@ -80,7 +83,7 @@
     {
       "name": "SWSM",
       "location": "Remote, United Kingdom",
-      "position": "Lead Developer",
+      "position": "Backend Developer",
       "startDate": "2021-05-01",
       "endDate": "2019-07-01",
       "summary": "Save Water Save Money has delivered 2.75 million water saving devices to more than 1 million customers, saving over 51 billion litres of water.",
@@ -140,31 +143,31 @@
       "title": "CloudAmpq Certified Developer",
       "date": "2014-11-01",
       "awarder": "CloudAmpq",
-      "summary": "There is no spoon."
+      "summary": ""
     },
     {
       "title": "Google Cloud Certified Associate Cloud Engineer",
       "date": "2021-06-01",
       "awarder": "Google Cloud",
-      "summary": "The Matrix has you."
+      "summary": ""
     },
     {
       "title": "AWS Certified Solutions Architect",
       "date": "2021-06-01",
       "awarder": "Amazon Web Services",
-      "summary": "The Matrix has you."
+      "summary": ""
     },
     {
       "title": "Laravel Certified Developer",
       "date": "2021-06-01",
       "awarder": "Laravel",
-      "summary": "The Matrix has you."
+      "summary": ""
     }
   ],
   "skills": [
     {
       "name": "PHP",
-      "level": "Master",
+      "level": "Senior",
       "summary": "Highly skilled in PHP with a strong understanding of PHP programming language, object-oriented programming, and design patterns.",
       "keywords": [
         "Laravel",
@@ -176,8 +179,8 @@
     },
     {
       "name": "Python",
-      "level": "Expert",
-      "summary": "Highly skilled in UI design with a strong understanding of design principles, user experience, and industry-standard tools.",
+      "level": "Mid Level",
+      "summary": "I've been programming commercialy for the past 6 years in Python. I've worked with Django, Flask, FastAPI, and FastAPI.",
       "keywords": [
         "Django",
         "Flask",
@@ -186,8 +189,8 @@
     },
     {
       "name": "Hardware Development",
-      "level": "Expert",
-       "summary": "Proficient in hardware design and software development. Excellent at understanding the fundamentals of electronics and software design.",
+      "level": "Senior",
+       "summary": "I've designed and built hardware products for the past 10 years. I have a strong understanding of hardware design and software development. Excellent at understanding the fundamentals of electronics and software design.",
        "keywords":  [
          "Electronics",
          "Software",
@@ -196,12 +199,13 @@
      },
     {
       "name": "Javascript",
-      "level": "Expert",
+      "level": "Senior",
       "summary": "Proficient in javascript. Excellent at understanding the fundamentals of javascript.",
       "keywords":  [
         "React",
         "Vue",
-        "Angular"
+        "Angular",
+        "Ionic"
       ]
     }
   ],
@@ -209,17 +213,17 @@
     {
       "language": "English",
       "fluency": "Advanced",
-      "summary": "Proficient in English with a pretty good level of speaking, writing and comprehension abilities. Able to effectively communicate ideas and understand complex information in both personal and professional settings. Demonstrates strong grammar skills and a broad vocabulary."
+      "summary": ""
     },
     {
       "language": "Italian",
       "fluency": "Medium",
-       "summary": "Proficient in Italian with a pretty good level of speaking, writing and comprehension abilities. Able to effectively communicate ideas and understand complex information in both personal and professional settings. Demonstrates strong grammar skills and a broad vocabulary."
+       "summary": ""
     },
     {
       "language": "Romanian",
       "fluency": "Native",
-      "summary": "Proficient in Romanian with a pretty good level of speaking, writing and comprehension abilities. Able to effectively communicate ideas and understand complex information in both personal and professional settings. Demonstrates strong grammar skills and a broad vocabulary."
+      "summary": ""
     }
   ],
   "interests": [
@@ -229,26 +233,27 @@
         "Nature Conservation",
         "Wildlife Conservation",
         "Wildlife Management",
-         "Climate Change"
+        "Climate Change"
       ]
     },
     {
       "name": "Energy Conservation",
       "keywords": [
-        "Dragons",
-        "Mermaids"
+        "Solar Energy",
+        "Battery Storage",
+        "Wind Energy"
       ]
     }
 
   ],
   "references": [
     {
-      "name": "Jon Basildon",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+      "name": "J M",
+      "reference": "It is my pleasure to recommend Stefan, his performance working as a backend engineer for Hornby Hobbies Limited proved that he will be a valuable addition to any company."
     },
     {
-      "name": "Laurie Bream",
-      "reference": "It is my pleasure to recommend Monica, her exceptional skills and talent were evident during her time at High-Tech Inc. I am confident that she will make a valuable impact at any organization she joins."
+      "name": "A B",
+      "reference": "It is my pleasure to recommend Stefan, her exceptional skills and talent were evident during her time at SWSM. I am confident that she will make a valuable impact at any organization she joins."
     }
 
   ],
@@ -257,66 +262,46 @@
       "name": "Laravel Mail",
       "description": "A Laravel Application for sending and managing email marketing campaigns.",
       "highlights": [
-        "Won award at AIHacks 2016",
-        "Built by all women team of newbie programmers",
-        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
+        "GrapeJs integration",
+        "Open Source",
+        "Automation"
       ],
       "keywords": [
-        "GoogleMaps", "Chrome Extension", "Javascript"
+        "Laravel", "Package", "Platform", "Marketing", "Workflows", "TDD"
       ],
-      "startDate": "2016-08-24",
-      "endDate": "2016-08-24",
-      "url": "https://missdirection.example.com",
+      "startDate": "2016-05-24",
+      "endDate": "2024-12-12",
+      "url": "https://laravelmail.com",
       "roles": [
-        "Team lead", "Designer"
+        "Founder"
       ],
-      "entity": "Smoogle",
+      "entity": "Lzo Media",
       "type": "application"
     },
     {
-      "name": "Lost in Space",
-      "description": "A cutting-edge navigation app that sends you on wild adventures",
+      "name": "Today Intel",
+      "description": "A cutting-edge ERP that helps companies managed and understand their data better",
       "highlights": [
-        "Won the Future Tech Award at the Space Symposium",
-        "Built by a team of skilled astronauts and engineers",
-        "Utilizes advanced technology such as Augmented Reality and AI"
+        "Create a a new platform for cleaning and organizing data",
+        "Implemented sentiment analysis using NLP",
+        "Containerized the application using Docker"
       ],
       "keywords": [
-        "Augmented Reality", "AI", "Space navigation"
+        "NLP",  "Sentiment Analysis", "Token Classification"
       ],
-      "startDate": "2021-07-01",
-      "endDate": "2021-07-01",
-      "url": "https://lostinspace.example.com",
+      "startDate": "2018-07-01",
+      "endDate": "2022-12-01",
+      "url": "https://todayintel.com",
       "roles": [
-        "Mission Commander", "Navigation Officer"
+        "Founder"
       ],
-      "entity": "Cosmic Corp",
+      "entity": "Today Intel",
       "type": "Software"
     }
   ],
-  "sideProjects": [
-    {
-      "name": "Bebop",
-      "description": "A spaceship that flies",
-      "url": "https://bebop.example.com",
-      "startDate": "2022-01-01",
-      "keywords": [
-        "Aerodynamics", "Space travel", "Rocket science"
-      ]
-    },
-    {
-      "name": "Warp Drive",
-      "description": "A futuristic spaceship that travels faster than light",
-      "url": "https://warpdrive.example.com",
-      "startDate": "2025-01-01",
-      "keywords": [
-        "Quantum physics", "Interstellar travel", "Wormholes"
-      ]
-    }
-  ],
   "meta": {
-    "canonical": "https://raw.githubusercontent.com/reorx/jsoncv/master/schema/jsoncv.schema.json",
-    "version": "v2.0.0",
-    "lastModified": "2023-02-12T22:26:00"
+    "canonical": "https://raw.githubusercontent.com/izdrail/izdrail.com/master/schema/jsoncv.schema.json",
+    "version": "v1.0.0",
+    "lastModified": "2024-09-12T22:26:00"
   }
 }

@@ -9,10 +9,10 @@ const renderData = {
   meta: {
     title: "jsoncv",
     description: "A toolkit for building your CV with JSON and creating stylish HTML/PDF files.",
-    url: "https://jsoncv.reorx.com",
+    url: "https://cv.izdrail.com",
     twitter: {
       card: "summary",
-      username: "novoreorx",
+      username: "thephpteacher",
     }
   },
   editorMeta: {

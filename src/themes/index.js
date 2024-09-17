@@ -8,7 +8,7 @@ import {
 
 const themes = {}
 
-const themeNames = ['reorx']
+const themeNames = ['reorx', 'izdrail']
 
 // https://vitejs.dev/guide/features.html#disabling-css-injection-into-the-page
 // note that `?raw` (https://vitejs.dev/guide/assets.html#importing-asset-as-string)
@@ -28,7 +28,7 @@ for (const name of themeNames) {
 }
 
 // set default
-themes.default = themes.reorx
+themes.default = themes.izdrail
 
 export function getTheme(name) {
   return themes[name]
