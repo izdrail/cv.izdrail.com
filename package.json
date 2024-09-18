@@ -15,7 +15,7 @@
     "@iconify/utils": "^2.0.0",
     "ajv-cli": "^5.0.0",
     "rollup-plugin-node-polyfills": "^0.2.1",
-    "sass": "^1.54.8",
+    "sass": "^1.79.1",
     "vite": "^4.1.1",
     "vite-plugin-ejs": "^1.6.4",
     "vite-plugin-handlebars": "^1.6.0",

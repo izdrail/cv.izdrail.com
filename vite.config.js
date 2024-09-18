@@ -11,7 +11,7 @@ const outDir = process.env.OUT_DIR || 'dist'
 
 const data = require(dataFilename)
 const renderData = getRenderData(data)
-renderData.theme = process.env.THEME || 'reorx'
+renderData.theme = process.env.THEME || 'izdrail'
 renderData.isProduction = process.env.NODE_ENV === 'production'
 renderData.meta = {
   title: data.basics.name,

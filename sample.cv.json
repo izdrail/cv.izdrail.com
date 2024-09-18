@@ -7,7 +7,7 @@
     "email": "bogdan.izdrail@gmail.com",
     "phone": "(44) 744-821-8899",
     "url": "https://izdrail.com",
-    "summary": "Hello there! I'm **Stefan**, a senior software developer from Romania, now living in the United Kingdom.\n With over 13 years of experience, I am passionate about building enterprise applications. Nothing excites me more than tackling a client's problem head-on and selecting the best programming language for the job.",
+    "summary": "I am a senior software engineer based in Essex, UK, specializing in solving intricate software challenges for businesses since 2007.",
     "location": {
       "address": "38 Deidre Avenue",
       "postalCode": "",
@@ -41,16 +41,16 @@
     {
       "name": "Debt Register",
       "location": "Remote, United Kingdom",
-      "description": "Imaginary technology company",
+      "description": "Innovative financial technology platform",
       "position": "Contract Developer",
       "startDate": "2024-05-01",
       "endDate": "2024-09-01",
-      "summary": "Debt Register is a platform for managing and distributing debt. It allows users to track their debt and make payments to the company.",
-       "highlights": [
-         "Build New Public Rest API",
-         "Improved User Experience",
-         "Improved Deployment Process using Github Actions"
-        ]
+      "summary": "Debt Register offers a comprehensive solution for debt tracking and management, enabling users to efficiently manage their payments.",
+      "highlights": [
+        "Developed a new Public REST API",
+        "Enhanced the overall User Experience",
+        "Streamlined deployment process using GitHub Actions"
+      ]
     },
     {
       "name": "Avrillo",
@@ -58,12 +58,12 @@
       "position": "Contract Developer",
       "startDate": "2024-05-01",
       "endDate": "2023-09-01",
-      "summary": "Licensed conveyance company in London, UK trusted by 40000+ clients. Hire UK's No. 1 awarded conveyancing experts to move cheaper and safer.",
+      "summary": "Avrillo is a leading conveyancing firm in London, trusted by over 40,000 clients for secure and affordable property transactions.",
       "highlights": [
-        "Implemented a new laravel microservice",
-        "Implemented Xero API",
-        "Implemented Event Driven Architecture using RabbitMQ",
-        "Created the deployment architecture using AWS & Docker"
+        "Implemented a scalable Laravel microservice",
+        "Integrated the Xero API for seamless financial management",
+        "Built an Event-Driven Architecture with RabbitMQ",
+        "Designed deployment architecture utilizing AWS & Docker"
       ]
     },
     {
@@ -72,12 +72,12 @@
       "position": "Backend Developer",
       "startDate": "2021-05-01",
       "endDate": "2023-09",
-      "summary": "Hornby Hobbies Limited is a British-owned scale model manufacturing company which has been focused on model railways.",
+      "summary": "Hornby Hobbies Limited is a British model manufacturing company specializing in model railways and other hobby products.",
       "highlights": [
-        "Implemented a new laravel microservice",
-        "Implemented Xero API",
-        "Implemented Event Driven Architecture using RabbitMQ",
-        "Created the deployment architecture using AWS & Docker"
+        "Created a robust Laravel microservice",
+        "Integrated the Xero API for financial automation",
+        "Adopted an Event-Driven Architecture using RabbitMQ",
+        "Built deployment infrastructure using AWS & Docker"
       ]
     },
     {
@@ -86,26 +86,26 @@
       "position": "Backend Developer",
       "startDate": "2021-05-01",
       "endDate": "2019-07-01",
-      "summary": "Save Water Save Money has delivered 2.75 million water saving devices to more than 1 million customers, saving over 51 billion litres of water.",
+      "summary": "Save Water Save Money delivered water-saving solutions to over a million customers, helping conserve more than 51 billion litres of water.",
       "highlights": [
-        "Refactored the existing code to use the new symfony framework",
-        "Implemented a new post code microservice",
-        "Created the deployment architecture using docker & kubernetes"
+        "Refactored legacy codebase to Symfony framework",
+        "Developed a postcode microservice for enhanced location-based services",
+        "Built deployment architecture using Docker & Kubernetes"
       ]
     },
     {
       "name": "Lzo Media",
       "location": "London, UK",
-      "description": "Awesome Software Company that I've firstly founded",
+      "description": "The pioneering software company I founded",
       "position": "Founder",
       "startDate": "2014-01-01",
       "endDate": "2023-12-01",
-      "summary": "Created a new platform for managing and distributing content across multiple WordPress sites.I've sold this platform to a major media company based in the UK",
+      "summary": "Developed and scaled a platform for content management and distribution across multiple WordPress sites, later sold to a major UK media company.",
       "highlights": [
-        "Build an platform for bloggers to monetize their content",
-        "High Traffic Websites and Mobile Apps - over 250k daily active users",
-        "Laravel Integrations",
-        "Wordpress Themes & Plugins Development"
+        "Built a platform enabling bloggers to monetize their content",
+        "Managed high-traffic websites and apps with over 250,000 daily active users",
+        "Developed seamless Laravel integrations",
+        "Created custom WordPress themes and plugins"
       ]
     }
   ],
@@ -116,11 +116,11 @@
       "url": "https://cancerresearchuk.org",
       "startDate": "2012-01-01",
       "endDate": "2024-12-12",
-      "summary": "Worked on parts of the ecommerce platforms built with Drupal.",
+      "summary": "Contributed to the e-commerce platform built on Drupal, enhancing the charity's online presence.",
       "highlights": [
-        "Implemented new payment gateway",
-        "Improved the checkout process",
-        "Developed a new feature for the Drupal Commerce module"
+        "Integrated a new payment gateway",
+        "Optimized the checkout process for better user experience",
+        "Added new features to the Drupal Commerce module"
       ]
     }
   ],
@@ -146,21 +146,9 @@
       "summary": ""
     },
     {
-      "title": "Google Cloud Certified Associate Cloud Engineer",
-      "date": "2021-06-01",
-      "awarder": "Google Cloud",
-      "summary": ""
-    },
-    {
       "title": "AWS Certified Solutions Architect",
       "date": "2021-06-01",
       "awarder": "Amazon Web Services",
-      "summary": ""
-    },
-    {
-      "title": "Laravel Certified Developer",
-      "date": "2021-06-01",
-      "awarder": "Laravel",
       "summary": ""
     }
   ],
@@ -168,7 +156,7 @@
     {
       "name": "PHP",
       "level": "Senior",
-      "summary": "Highly skilled in PHP with a strong understanding of PHP programming language, object-oriented programming, and design patterns.",
+      "summary": "Expert in PHP development with a solid grasp of object-oriented programming, design patterns, and various frameworks.",
       "keywords": [
         "Laravel",
         "Symfony",
@@ -180,7 +168,7 @@
     {
       "name": "Python",
       "level": "Mid Level",
-      "summary": "I've been programming commercialy for the past 6 years in Python. I've worked with Django, Flask, FastAPI, and FastAPI.",
+      "summary": "Commercial experience in Python for over 6 years, working with frameworks like Django, Flask, and FastAPI.",
       "keywords": [
         "Django",
         "Flask",
@@ -190,18 +178,18 @@
     {
       "name": "Hardware Development",
       "level": "Senior",
-       "summary": "I've designed and built hardware products for the past 10 years. I have a strong understanding of hardware design and software development. Excellent at understanding the fundamentals of electronics and software design.",
-       "keywords":  [
-         "Electronics",
-         "Software",
-         "Hardware"
-       ]
-     },
+      "summary": "10+ years of experience designing and building hardware solutions with deep knowledge of both electronics and software development.",
+      "keywords": [
+        "Electronics",
+        "Software",
+        "Hardware"
+      ]
+    },
     {
       "name": "Javascript",
       "level": "Senior",
-      "summary": "Proficient in javascript. Excellent at understanding the fundamentals of javascript.",
-      "keywords":  [
+      "summary": "Proficient in JavaScript, with a strong foundation in modern frameworks and libraries.",
+      "keywords": [
         "React",
         "Vue",
         "Angular",
@@ -218,7 +206,7 @@
     {
       "language": "Italian",
       "fluency": "Medium",
-       "summary": ""
+      "summary": ""
     },
     {
       "language": "Romanian",
@@ -244,30 +232,33 @@
         "Wind Energy"
       ]
     }
-
   ],
   "references": [
     {
-      "name": "J M",
-      "reference": "It is my pleasure to recommend Stefan, his performance working as a backend engineer for Hornby Hobbies Limited proved that he will be a valuable addition to any company."
+      "name": "J B",
+      "reference": "I wholeheartedly recommend Stefan for his outstanding work as a backend engineer at Hornby Hobbies Limited. He is a valuable asset to any team."
     },
     {
-      "name": "A B",
-      "reference": "It is my pleasure to recommend Stefan, her exceptional skills and talent were evident during her time at SWSM. I am confident that she will make a valuable impact at any organization she joins."
+      "name": "L P",
+      "reference": "Stefan's exceptional skills were evident during his time at Pogliani. His contributions made a significant impact, and he will be a great asset to any organization."
     }
-
   ],
   "projects": [
     {
       "name": "Laravel Mail",
-      "description": "A Laravel Application for sending and managing email marketing campaigns.",
+      "description": "A robust Laravel application designed for managing and automating email marketing campaigns.",
       "highlights": [
-        "GrapeJs integration",
-        "Open Source",
-        "Automation"
+        "Integrated GrapeJS for visual email creation",
+        "Fully open-source platform",
+        "Automation for workflows and campaigns"
       ],
       "keywords": [
-        "Laravel", "Package", "Platform", "Marketing", "Workflows", "TDD"
+        "Laravel",
+        "Package",
+        "Platform",
+        "Marketing",
+        "Workflows",
+        "TDD"
       ],
       "startDate": "2016-05-24",
       "endDate": "2024-12-12",
@@ -280,20 +271,22 @@
     },
     {
       "name": "Today Intel",
-      "description": "A cutting-edge ERP that helps companies managed and understand their data better",
+      "description": "Backend API for the Today Intel app, offering news, SEO analysis, NLP tasks, and more.",
       "highlights": [
-        "Create a a new platform for cleaning and organizing data",
-        "Implemented sentiment analysis using NLP",
-        "Containerized the application using Docker"
+        "Developed API for news and SEO analysis",
+        "Implemented sentiment analysis using NLP techniques",
+        "Containerized the application with Docker"
       ],
       "keywords": [
-        "NLP",  "Sentiment Analysis", "Token Classification"
+        "NLP",
+        "Sentiment Analysis",
+        "Token Classification"
       ],
       "startDate": "2018-07-01",
       "endDate": "2022-12-01",
-      "url": "https://todayintel.com",
+      "url": "",
       "roles": [
-        "Founder"
+        "Contract"
       ],
       "entity": "Today Intel",
       "type": "Software"
