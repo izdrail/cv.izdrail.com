@@ -1,11 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/izdrail/cv.izdrail.com/master/schema/jsoncv.schema.json",
   "basics": {
-    "name": "Stefan Izdrail",
+    "name": "Stefan Bogdanel",
     "label": "Senior Engineer",
     "image": "https://avatars.githubusercontent.com/u/2276408?s=400&u=8afd9e13f8764cb7be48664b018106507c112424&v=4",
-    "email": "bogdan.izdrail@gmail.com",
-    "phone": "(44) 744-821-8899",
+    "email": "stefan@izdrail.com",
+    "phone": "(44) 0788-0587-999",
     "url": "https://izdrail.com",
     "summary": "I am a senior software engineer based in Essex, UK, specializing in solving intricate software challenges for businesses since 2007.",
     "location": {
@@ -28,12 +28,6 @@
         "icon": "linkedin",
         "username": "izdrail",
         "url": "https://www.linkedin.com/in/izdrail/"
-      },
-      {
-        "network": "Twitter",
-        "icon": "twitter",
-        "username": "thephpteacher",
-        "url": "https://twitter.com/thephpteacher"
       }
     ]
   },
@@ -295,6 +289,6 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/izdrail/izdrail.com/master/schema/jsoncv.schema.json",
     "version": "v1.0.0",
-    "lastModified": "2024-09-12T22:26:00"
+    "lastModified": "2024-10-15T22:26:00"
   }
 }
