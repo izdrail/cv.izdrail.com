@@ -7,7 +7,8 @@
     "email": "stefan@izdrail.com",
     "phone": "(44) 0788-0587-999",
     "url": "https://izdrail.com",
-    "summary": "I am a senior software engineer based in Essex, UK, specializing in solving intricate software challenges for businesses since 2007.",
+    "summary": "I am a senior software engineer based in Essex, UK, \n specializing in solving intricate software challenges for businesses since 2007.",
+
     "location": {
       "address": "38 Deidre Avenue",
       "postalCode": "",
@@ -69,7 +70,6 @@
       "summary": "Hornby Hobbies Limited is a British model manufacturing company specializing in model railways and other hobby products.",
       "highlights": [
         "Created a robust Laravel microservice",
-        "Integrated the Xero API for financial automation",
         "Adopted an Event-Driven Architecture using RabbitMQ",
         "Built deployment infrastructure using AWS & Docker"
       ]
@@ -84,13 +84,13 @@
       "highlights": [
         "Refactored legacy codebase to Symfony framework",
         "Developed a postcode microservice for enhanced location-based services",
-        "Built deployment architecture using Docker & Kubernetes"
+        "Built deployment architecture using Docker"
       ]
     },
     {
       "name": "Lzo Media",
       "location": "London, UK",
-      "description": "The pioneering software company I founded",
+      "description": "Wordpress platform for content management and distribution across multiple WordPress sites, later sold to a major UK media company.",
       "position": "Founder",
       "startDate": "2014-01-01",
       "endDate": "2023-12-01",
@@ -98,7 +98,6 @@
       "highlights": [
         "Built a platform enabling bloggers to monetize their content",
         "Managed high-traffic websites and apps with over 250,000 daily active users",
-        "Developed seamless Laravel integrations",
         "Created custom WordPress themes and plugins"
       ]
     }
@@ -225,6 +224,14 @@
         "Battery Storage",
         "Wind Energy"
       ]
+    },
+    {
+      "name": "Education",
+      "keywords": [
+        "Improvement of Education",
+        "Educational Technology",
+        "Education Technology"
+      ]
     }
   ],
   "references": [
@@ -252,7 +259,7 @@
         "Platform",
         "Marketing",
         "Workflows",
-        "TDD"
+        "OSINT"
       ],
       "startDate": "2016-05-24",
       "endDate": "2024-12-12",
@@ -260,35 +267,13 @@
       "roles": [
         "Founder"
       ],
-      "entity": "Lzo Media",
+      "entity": "Laravel Company",
       "type": "application"
-    },
-    {
-      "name": "Today Intel",
-      "description": "Backend API for the Today Intel app, offering news, SEO analysis, NLP tasks, and more.",
-      "highlights": [
-        "Developed API for news and SEO analysis",
-        "Implemented sentiment analysis using NLP techniques",
-        "Containerized the application with Docker"
-      ],
-      "keywords": [
-        "NLP",
-        "Sentiment Analysis",
-        "Token Classification"
-      ],
-      "startDate": "2018-07-01",
-      "endDate": "2022-12-01",
-      "url": "",
-      "roles": [
-        "Contract"
-      ],
-      "entity": "Today Intel",
-      "type": "Software"
     }
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/izdrail/izdrail.com/master/schema/jsoncv.schema.json",
-    "version": "v1.0.0",
+    "version": "v0.0.3",
     "lastModified": "2024-10-15T22:26:00"
   }
 }
