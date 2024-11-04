@@ -6,7 +6,16 @@ import {
   varNamePrimaryColor,
 } from './data';
 
-const themes = {}
+const themes = {
+  reorx: {
+    template: null,
+    style: null,
+  },
+  izdrail: {
+    template: null,
+    style: null,
+  },
+}
 
 const themeNames = ['reorx', 'izdrail']
 

@@ -2,16 +2,14 @@
   "$schema": "https://raw.githubusercontent.com/izdrail/cv.izdrail.com/master/schema/jsoncv.schema.json",
   "basics": {
     "name": "Stefan Bogdanel",
-    "label": "Senior Engineer",
+    "label": "Senior Software Engineer",
     "image": "https://avatars.githubusercontent.com/u/2276408?s=400&u=8afd9e13f8764cb7be48664b018106507c112424&v=4",
     "email": "stefan@izdrail.com",
-    "phone": "(44) 0788-0587-999",
+    "phone": "(44) 0788-0587-999 / +44 744 821 88 99",
     "url": "https://izdrail.com",
-    "summary": "I am a senior software engineer based in Essex, UK, \n specializing in solving intricate software challenges for businesses since 2007.",
-
+    "summary": "I am a Senior Software Engineer with extensive experience in building and optimizing robust solutions for complex business problems, specializing in PHP & Python and backend development.",
     "location": {
       "address": "38 Deidre Avenue",
-      "postalCode": "",
       "city": "Wickford",
       "region": "Essex",
       "country": "England",
@@ -34,71 +32,57 @@
   },
   "work": [
     {
-      "name": "Debt Register",
+      "name": "Debt Register LTD",
       "location": "Remote, United Kingdom",
-      "description": "Innovative financial technology platform",
+      "description": "Innovative fintech platform for streamlined debt management.",
       "position": "Contract Developer",
       "startDate": "2024-05-01",
       "endDate": "2024-09-01",
-      "summary": "Debt Register offers a comprehensive solution for debt tracking and management, enabling users to efficiently manage their payments.",
+      "summary": "Contributed to a debt management platform enabling efficient debt tracking, improved user experience, and automation.",
       "highlights": [
         "Developed a new Public REST API",
-        "Enhanced the overall User Experience",
-        "Streamlined deployment process using GitHub Actions"
+        "Enhanced user experience through refined UI elements",
+        "Automated deployments using GitHub Actions"
       ]
     },
     {
-      "name": "Avrillo",
+      "name": "Avrillo LTD",
       "location": "Remote, United Kingdom",
       "position": "Contract Developer",
       "startDate": "2024-05-01",
       "endDate": "2023-09-01",
-      "summary": "Avrillo is a leading conveyancing firm in London, trusted by over 40,000 clients for secure and affordable property transactions.",
+      "summary": "Developed scalable backend solutions for a leading conveyancing firm.",
       "highlights": [
-        "Implemented a scalable Laravel microservice",
-        "Integrated the Xero API for seamless financial management",
-        "Built an Event-Driven Architecture with RabbitMQ",
-        "Designed deployment architecture utilizing AWS & Docker"
+        "Built a scalable Laravel microservice architecture",
+        "Integrated Xero API for seamless financial management",
+        "Implemented RabbitMQ-driven event architecture",
+        "Established AWS and Docker-based deployment strategy"
       ]
     },
     {
-      "name": "Hornby",
+      "name": "Hornby LTD",
       "location": "Remote, United Kingdom",
       "position": "Backend Developer",
       "startDate": "2021-05-01",
       "endDate": "2023-09",
-      "summary": "Hornby Hobbies Limited is a British model manufacturing company specializing in model railways and other hobby products.",
+      "summary": "Supported backend infrastructure for model railway and hobby manufacturing company.",
       "highlights": [
-        "Created a robust Laravel microservice",
-        "Adopted an Event-Driven Architecture using RabbitMQ",
-        "Built deployment infrastructure using AWS & Docker"
+        "Built Laravel microservices for backend support",
+        "Adopted RabbitMQ for event-driven architecture",
+        "Designed scalable infrastructure with AWS and Docker"
       ]
     },
     {
-      "name": "SWSM",
+      "name": "Save Water LTD",
       "location": "Remote, United Kingdom",
       "position": "Backend Developer",
-      "startDate": "2021-05-01",
-      "endDate": "2019-07-01",
-      "summary": "Save Water Save Money delivered water-saving solutions to over a million customers, helping conserve more than 51 billion litres of water.",
+      "startDate": "2019-03-01",
+      "endDate": "2021-05-01",
+      "summary": "Refactored and optimized monolithic backend to microservices.",
       "highlights": [
-        "Refactored legacy codebase to Symfony framework",
-        "Developed a postcode microservice for enhanced location-based services",
-        "Built deployment architecture using Docker"
-      ]
-    },
-    {
-      "name": "Lzo Media",
-      "location": "London, UK",
-      "description": "Wordpress platform for content management and distribution across multiple WordPress sites, later sold to a major UK media company.",
-      "position": "Founder",
-      "startDate": "2014-01-01",
-      "endDate": "2023-12-01",
-      "summary": "Developed and scaled a platform for content management and distribution across multiple WordPress sites, later sold to a major UK media company.",
-      "highlights": [
-        "Built a platform enabling bloggers to monetize their content",
-        "Managed high-traffic websites and apps with over 250,000 daily active users",
-        "Created custom WordPress themes and plugins"
+        "Implemented TDD and BDD for backend development",
+        "Refactor and optimized Symfony monolith to microservices",
+        "Designed scalable infrastructure with AWS,Docker and Github Actions"
       ]
     }
   ],
@@ -109,11 +93,11 @@
       "url": "https://cancerresearchuk.org",
       "startDate": "2012-01-01",
       "endDate": "2024-12-12",
-      "summary": "Contributed to the e-commerce platform built on Drupal, enhancing the charity's online presence.",
+      "summary": "Enhanced e-commerce functionality on a charity platform.",
       "highlights": [
-        "Integrated a new payment gateway",
-        "Optimized the checkout process for better user experience",
-        "Added new features to the Drupal Commerce module"
+        "Integrated new payment gateway for transactions",
+        "Optimized checkout experience for end-users",
+        "Expanded Drupal Commerce with new features"
       ]
     }
   ],
@@ -135,76 +119,46 @@
     {
       "title": "CloudAmpq Certified Developer",
       "date": "2014-11-01",
-      "awarder": "CloudAmpq",
-      "summary": ""
+      "awarder": "CloudAmpq"
     },
     {
       "title": "AWS Certified Solutions Architect",
       "date": "2021-06-01",
-      "awarder": "Amazon Web Services",
-      "summary": ""
+      "awarder": "Amazon Web Services"
     }
   ],
   "skills": [
     {
       "name": "PHP",
       "level": "Senior",
-      "summary": "Expert in PHP development with a solid grasp of object-oriented programming, design patterns, and various frameworks.",
-      "keywords": [
-        "Laravel",
-        "Symfony",
-        "CodeIgniter",
-        "CakePHP",
-        "Yii"
-      ]
+      "summary": "15+ years of experience with PHP, expertise in frameworks like Laravel, Symfony, and Yii.",
+      "keywords": ["Laravel", "Symfony", "CodeIgniter", "CakePHP", "Yii"]
     },
     {
       "name": "Python",
       "level": "Mid Level",
-      "summary": "Commercial experience in Python for over 6 years, working with frameworks like Django, Flask, and FastAPI.",
-      "keywords": [
-        "Django",
-        "Flask",
-        "FastAPI"
-      ]
+      "summary": "6+ years of Python experience with Django, Flask, and FastAPI.",
+      "keywords": ["Django", "Flask", "FastAPI"]
     },
     {
-      "name": "Hardware Development",
+      "name": "JavaScript",
       "level": "Senior",
-      "summary": "10+ years of experience designing and building hardware solutions with deep knowledge of both electronics and software development.",
-      "keywords": [
-        "Electronics",
-        "Software",
-        "Hardware"
-      ]
-    },
-    {
-      "name": "Javascript",
-      "level": "Senior",
-      "summary": "Proficient in JavaScript, with a strong foundation in modern frameworks and libraries.",
-      "keywords": [
-        "React",
-        "Vue",
-        "Angular",
-        "Ionic"
-      ]
+      "summary": "Experienced in JavaScript and frameworks such as React, Vue, and Angular.",
+      "keywords": ["React", "Vue", "Angular", "Ionic"]
     }
   ],
   "languages": [
     {
       "language": "English",
-      "fluency": "Advanced",
-      "summary": ""
+      "fluency": "Advanced"
     },
     {
       "language": "Italian",
-      "fluency": "Medium",
-      "summary": ""
+      "fluency": "Intermediate"
     },
     {
       "language": "Romanian",
-      "fluency": "Native",
-      "summary": ""
+      "fluency": "Native"
     }
   ],
   "interests": [
@@ -213,8 +167,7 @@
       "keywords": [
         "Nature Conservation",
         "Wildlife Conservation",
-        "Wildlife Management",
-        "Climate Change"
+        "Climate Change Awareness"
       ]
     },
     {
@@ -224,49 +177,32 @@
         "Battery Storage",
         "Wind Energy"
       ]
-    },
-    {
-      "name": "Education",
-      "keywords": [
-        "Improvement of Education",
-        "Educational Technology",
-        "Education Technology"
-      ]
     }
   ],
   "references": [
     {
       "name": "J B",
-      "reference": "I wholeheartedly recommend Stefan for his outstanding work as a backend engineer at Hornby Hobbies Limited. He is a valuable asset to any team."
+      "reference": "Stefan is an exceptional backend engineer, highly recommended for his work at Hornby Hobbies Limited."
     },
     {
       "name": "L P",
-      "reference": "Stefan's exceptional skills were evident during his time at Pogliani. His contributions made a significant impact, and he will be a great asset to any organization."
+      "reference": "Stefan's work at Pogliani demonstrated his skill in backend development and integration."
     }
   ],
   "projects": [
     {
       "name": "Laravel Mail",
-      "description": "A robust Laravel application designed for managing and automating email marketing campaigns.",
+      "description": "An open-source email marketing platform with workflow automation.",
       "highlights": [
-        "Integrated GrapeJS for visual email creation",
-        "Fully open-source platform",
-        "Automation for workflows and campaigns"
+        "Integrated GrapeJS for email creation",
+        "Built for marketing automation and workflows",
+        "Supports OSINT with integrated features"
       ],
-      "keywords": [
-        "Laravel",
-        "Package",
-        "Platform",
-        "Marketing",
-        "Workflows",
-        "OSINT"
-      ],
+      "keywords": ["Laravel", "Marketing", "Workflows", "OSINT"],
       "startDate": "2016-05-24",
       "endDate": "2024-12-12",
       "url": "https://laravelmail.com",
-      "roles": [
-        "Founder"
-      ],
+      "roles": ["Founder"],
       "entity": "Laravel Company",
       "type": "application"
     }
