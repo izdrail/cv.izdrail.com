@@ -118,7 +118,7 @@
   "awards": [
     {
       "title": "CloudAmpq Certified Developer",
-      "date": "2014-11-01",
+      "date": "2020-11-01",
       "awarder": "CloudAmpq"
     },
     {
@@ -163,19 +163,27 @@
   ],
   "interests": [
     {
+      "name": "Food Production",
+      "keywords": [
+        "Organic Farming",
+        "Sustainable Agriculture",
+        "Local Food Production"
+      ]
+    },
+    {
       "name": "Environmental Science",
       "keywords": [
         "Nature Conservation",
-        "Wildlife Conservation",
-        "Climate Change Awareness"
+        "Wildlife Conservation"
       ]
     },
     {
       "name": "Energy Conservation",
       "keywords": [
         "Solar Energy",
-        "Battery Storage",
-        "Wind Energy"
+        "Offline Storage",
+        "Wind Energy",
+        "Hydro Energy"
       ]
     }
   ],
@@ -194,13 +202,15 @@
       "name": "Laravel Mail",
       "description": "An open-source email marketing platform with workflow automation.",
       "highlights": [
-        "Integrated GrapeJS for email creation",
-        "Built for marketing automation and workflows",
-        "Supports OSINT with integrated features"
+        "Multi channel email marketing platform",
+        "Integrated GrapeJS for templates and email creation",
+        "Integrated with laravel workflow automation",
+        "Supports O.S.I.N.T with integrated features",
+        "Used for marketing campaigns and email automation"
       ],
-      "keywords": ["Laravel", "Marketing", "Workflows", "OSINT"],
-      "startDate": "2016-05-24",
-      "endDate": "2024-12-12",
+      "keywords": ["Laravel", "Marketing", "Workflows", "Marketing Automation", "O.S.I.N.T"],
+      "startDate": "2024",
+      "endDate": "",
       "url": "https://laravelmail.com",
       "roles": ["Founder"],
       "entity": "Laravel Company",
