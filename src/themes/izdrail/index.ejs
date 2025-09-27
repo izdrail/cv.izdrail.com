@@ -137,7 +137,7 @@ function dateRange(item, level) {
   <% for (const item of cv.projects) { %>
     <div class="project section-item">
       <div class="row space-between">
-        <h3><%= item.name %></h3>
+        <h3 title="<%= item.name %>"><%= item.name %></h3>
         <%- linkInDiv(item.url) %>
       </div>
       <div class="row space-between">
