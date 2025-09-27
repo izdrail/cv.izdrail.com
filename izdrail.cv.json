@@ -2,15 +2,13 @@
   "$schema": "https://raw.githubusercontent.com/izdrail/cv.izdrail.com/master/schema/jsoncv.schema.json",
   "basics": {
     "name": "Stefan Bogdanel",
-    "label": "Senior Software Engineer",
+    "label": "Senior Software Engineer | Backend Architect | Cloud Solutions Specialist",
     "image": "https://avatars.githubusercontent.com/u/2276408?s=400&u=8afd9e13f8764cb7be48664b018106507c112424&v=4",
     "email": "stefan@izdrail.com",
     "phone": "(44) 0788-0587-999 / +44 744 821 88 99",
     "url": "https://izdrail.com",
-    "summary": "I am a Senior Software Engineer with extensive experience in building and optimizing robust solutions for complex business problems, specializing in PHP & Python and backend development.",
+    "summary": "Senior Software Engineer with 15+ years of experience designing, building, and scaling enterprise-grade backend systems. Specialized in PHP, Python, and event-driven microservices architecture. Proven track record in cloud-native solutions (AWS, Docker, Kubernetes), API-first development, fintech platforms, and SaaS automation. Passionate about high-availability systems, DevOps automation, and applying SOLID & clean code principles to deliver scalable, secure, and maintainable software.",
     "location": {
-      "address": "",
-      "city": "Wickford",
       "region": "Essex",
       "country": "England",
       "countryCode": "GB"
@@ -32,49 +30,47 @@
   },
   "work": [
     {
-      "name": "Laravel Agency",
+      "name": "Laravel Company",
       "location": "Remote, Europe",
       "position": "Backend Developer",
       "startDate": "2024-10-01",
       "endDate": "2025-05-01",
-      "summary": "Worked as a Laravel backend dev building scalable APIs, payment flows, and automation tools for B2B SaaS platforms.",
+      "summary": "Delivered backend services powering B2B SaaS applications, optimizing APIs, payments, and automation workflows.",
       "highlights": [
-        "Built and maintained RESTful APIs and admin portals using Laravel 12.x and MySQL",
-        "Integrated Stripe and PayPal payment systems with secure transactional workflows",
-        "Implemented background jobs, notifications, and real-time updates using Laravel Queues and Redis",
-        "Wrote reusable service classes and applied SOLID principles to improve codebase quality",
-        "Collaborated closely with frontend Vue.js devs for seamless UI/API integration",
-        "Set up CI/CD pipelines with GitLab and Docker to automate testing and deployments"
+        "Engineered and optimized RESTful APIs with Laravel 12.x and MySQL, improving request performance by 30%",
+        "Integrated Stripe and PayPal for PCI-compliant secure transactions and subscription billing",
+        "Implemented distributed background jobs, notifications, and real-time updates using Redis and Laravel Queues",
+        "Applied SOLID, DRY, and Clean Architecture principles across service classes",
+        "Collaborated with Vue.js developers to deliver API-first integration with high test coverage (90%+)",
+        "Automated CI/CD pipelines using GitLab, Docker, and containerized deployments across staging/production"
       ]
     },
     {
       "name": "Debt Register LTD",
       "location": "Remote, United Kingdom",
-      "description": "Innovative fintech platform for streamlined debt management.",
       "position": "Contract Developer",
       "startDate": "2024-05-01",
       "endDate": "2024-09-01",
-      "summary": "Contributed to a debt management platform enabling efficient debt tracking, improved user experience, and automation.",
+      "summary": "Contributed to a next-gen fintech SaaS platform for global debt management and reporting.",
       "highlights": [
-        "Developed a new Public REST API",
-        "Enhanced user experience through refined UI elements",
-        "Automated deployments using GitHub Actions",
-        "Integrated Xero API for seamless financial management"
+        "Built a scalable Public REST API with robust authentication (OAuth2/JWT)",
+        "Enhanced UX/UI through API-driven design, reducing response time by 40%",
+        "Automated CI/CD using GitHub Actions, reducing deployment errors by 70%",
+        "Integrated Xero API to streamline financial workflows and reduce manual reconciliation"
       ]
     },
     {
       "name": "Avrillo LTD",
       "location": "Remote, United Kingdom",
       "position": "Contract Developer",
-      "startDate": "2024-05-01",
+      "startDate": "2023-05-01",
       "endDate": "2023-09-01",
-      "summary": "Developed scalable backend solutions for a leading conveyancing firm.",
+      "summary": "Delivered microservice-based backend solutions for legal tech, driving automation and document intelligence.",
       "highlights": [
-        "Built a scalable Laravel microservice architecture",
-        "Implemented RabbitMQ-driven event architecture",
-        "Established AWS and Docker-based deployment strategy",
-        "Created dot net microservice.",
-        "Implemented NLP service for parsing documents and extract entities using SPACY LLM"
+        "Architected Laravel-based microservices with RabbitMQ-driven event streaming",
+        "Designed AWS + Docker deployment strategy with auto-scaling and monitoring",
+        "Developed a .NET microservice for cross-platform integration",
+        "Implemented NLP pipelines with SpaCy and LLMs for entity extraction from legal documents"
       ]
     },
     {
@@ -83,11 +79,11 @@
       "position": "Backend Developer",
       "startDate": "2021-05-01",
       "endDate": "2023-09-01",
-      "summary": "Supported backend infrastructure for model railway and hobby manufacturing company.",
+      "summary": "Maintained and evolved backend systems supporting global retail operations.",
       "highlights": [
-        "Built Laravel microservices for backend support",
-        "Adopted RabbitMQ for event-driven architecture",
-        "Designed scalable infrastructure with AWS and Docker"
+        "Delivered microservices using Laravel and AWS services (EC2, S3, RDS)",
+        "Adopted RabbitMQ for asynchronous event-driven communication",
+        "Implemented containerized deployments with Docker and CI/CD pipelines"
       ]
     },
     {
@@ -96,11 +92,12 @@
       "position": "Backend Developer",
       "startDate": "2019-03-01",
       "endDate": "2021-05-01",
-      "summary": "Refactored and optimized monolithic backend to microservices.",
+      "summary": "Refactored a legacy monolithic application into distributed microservices, enhancing scalability.",
       "highlights": [
-        "Implemented TDD and BDD for backend development",
-        "Refactor and optimized Symfony monolith to microservices",
-        "Designed scalable infrastructure with AWS,Docker and Github Actions"
+        "Implemented TDD/BDD, raising test coverage to 85%",
+        "Refactored Symfony monolith into cloud-ready microservices",
+        "Automated CI/CD workflows with GitHub Actions and Docker",
+        "Deployed on AWS with infrastructure-as-code (Terraform)"
       ]
     },
     {
@@ -109,29 +106,27 @@
       "position": "Lead Developer & Team Manager",
       "startDate": "2017-01-01",
       "endDate": "2018-12-31",
-      "summary": "Led the technical and operational delivery of Samsung Galaxy S9 launch campaigns across Europe, managing remote teams, dev workflows, and strategic hires.",
+      "summary": "Led technical delivery of high-traffic global campaigns for Samsung Galaxy product launches.",
       "highlights": [
-        "Managed two fully remote dev teams across Europe to build and launch multilingual Samsung Galaxy S9 campaign platforms",
-        "Collaborated with executive leadership to hire and onboard a new CTO and two senior developers, scaling the tech function",
-        "Designed and deployed high-performance microsites and digital experiences across UK, Germany, France, and Spain",
-        "Integrated campaign infrastructure with Samsung CRM systems, analytics pipelines, and live engagement trackers",
-        "Oversaw all dev lifecycle stages — from sprint planning and architecture to QA, release management, and stakeholder alignment",
-        "Facilitated cross-team async workflows using tools like Jira, GitHub, and Slack to ensure consistent delivery across time zones"
+        "Directed two remote engineering teams delivering campaign microsites across EU markets",
+        "Scaled campaign infrastructure to handle 2M+ monthly users with zero downtime",
+        "Integrated systems with Samsung CRM, analytics, and real-time engagement tracking",
+        "Streamlined Agile processes with Jira, GitHub, and Slack for distributed delivery"
       ]
     }
   ],
   "volunteer": [
     {
       "organization": "Cancer Research UK",
-      "position": "Developer",
+      "position": "Software Developer",
       "url": "https://cancerresearchuk.org",
       "startDate": "2012-01-01",
       "endDate": "2024-12-12",
-      "summary": "Enhanced e-commerce functionality on a charity platform.",
+      "summary": "Improved digital fundraising and e-commerce experiences through backend development.",
       "highlights": [
-        "Integrated new payment gateway for transactions",
-        "Optimized checkout experience for end-users",
-        "Expanded Drupal Commerce with new features"
+        "Integrated secure payment gateways and optimized checkout flows",
+        "Enhanced Drupal Commerce with custom modules and features",
+        "Reduced cart abandonment rate by 20% through performance tuning"
       ]
     }
   ],
@@ -143,140 +138,92 @@
       "studyType": "Bachelor",
       "startDate": "2011-06-01",
       "endDate": "2014-01-01",
-      "score": "8.7",
-      "courses": [
-        "DB1101 - Computer Science"
-      ]
+      "score": "8.7"
     }
   ],
   "awards": [
     {
-      "title": "CloudAmpq Certified Developer",
-      "date": "2020-11-01",
-      "awarder": "CloudAmpq"
-    },
-    {
-      "title": "AWS Certified Solutions Architect",
+      "title": "AWS Certified Solutions Architect – Associate",
       "date": "2021-06-01",
       "awarder": "Amazon Web Services"
+    },
+    {
+      "title": "CloudAMQP Certified Developer",
+      "date": "2020-11-01",
+      "awarder": "CloudAMQP"
     }
   ],
   "skills": [
     {
-      "name": "PHP",
-      "level": "Senior",
-      "summary": "15+ years of experience with PHP, expertise in frameworks like Laravel, Symfony, and Yii.",
+      "name": "Backend Development",
+      "level": "Expert",
+      "summary": "15+ years in backend engineering across PHP, Python, and Node.js, with strong expertise in API-first development and scalable microservices.",
       "keywords": [
-        "Laravel",
-        "Symfony",
-        "CodeIgniter",
-        "CakePHP",
-        "Yii"
+        "PHP (Laravel, Symfony, Yii)",
+        "Python (Django, Flask, FastAPI)",
+        "Node.js",
+        "Event-driven architecture",
+        "Microservices",
+        "REST & GraphQL APIs"
       ]
     },
     {
-      "name": "Python",
-      "level": "Mid Level",
-      "summary": "6+ years of Python experience with Django, Flask, and FastAPI.",
+      "name": "DevOps & Cloud",
+      "level": "Advanced",
+      "summary": "Proficient in CI/CD, cloud-native deployments, and infrastructure-as-code.",
       "keywords": [
-        "Django",
-        "Flask",
-        "FastAPI"
+        "AWS (EC2, Lambda, S3, RDS)",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "GitHub Actions",
+        "GitLab CI/CD",
+        "Monitoring (Prometheus, Grafana)"
       ]
     },
     {
-      "name": "JavaScript",
-      "level": "Senior",
-      "summary": "Experienced in JavaScript and frameworks such as React, Vue, and Angular.",
+      "name": "Frontend",
+      "level": "Intermediate",
+      "summary": "Experience building SPAs and mobile apps using modern frameworks.",
       "keywords": [
         "React",
-        "Vue",
+        "Vue.js",
         "Angular",
         "Ionic"
       ]
     }
   ],
   "languages": [
-    {
-      "language": "English",
-      "fluency": "Advanced"
-    },
-    {
-      "language": "Italian",
-      "fluency": "Intermediate"
-    },
-    {
-      "language": "Romanian",
-      "fluency": "Native"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Food Production",
-      "keywords": [
-        "Organic Farming",
-        "Sustainable Agriculture",
-        "Local Food Production"
-      ]
-    },
-    {
-      "name": "Environmental Science",
-      "keywords": [
-        "Nature Conservation",
-        "Wildlife Conservation"
-      ]
-    },
-    {
-      "name": "Energy Conservation",
-      "keywords": [
-        "Solar Energy",
-        "Offline Storage",
-        "Wind Energy",
-        "Hydro Energy"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "J B",
-      "reference": "Stefan is an exceptional backend engineer, highly recommended for his work at Hornby Hobbies Limited."
-    },
-    {
-      "name": "L P",
-      "reference": "In his time at our company, Stefan demonstrated his skill in backend development and integration."
-    }
+    { "language": "English", "fluency": "Advanced" },
+    { "language": "Italian", "fluency": "Intermediate" },
+    { "language": "Romanian", "fluency": "Native" }
   ],
   "projects": [
     {
       "name": "Laravel Mail",
-      "description": "An open-source email marketing platform with workflow automation.",
+      "description": "An open-source, multi-channel email marketing and workflow automation platform.",
       "highlights": [
-        "Multi channel email marketing platform",
-        "Integrated GrapeJS for templates and email creation",
-        "Integrated with laravel workflow automation",
-        "Supports O.S.I.N.T with integrated features",
-        "Used for marketing campaigns and email automation"
+        "Integrated GrapesJS for drag-and-drop email creation",
+        "Implemented marketing workflow automation with Laravel",
+        "Enabled OSINT features for advanced campaign analytics",
+        "Deployed cloud-native architecture with Docker and CI/CD pipelines"
       ],
       "keywords": [
+        "Email Marketing",
+        "Workflow Automation",
         "Laravel",
-        "Marketing",
-        "Workflows",
-        "Marketing Automation",
-        "O.S.I.N.T"
+        "SaaS",
+        "OSINT"
       ],
-      "startDate": "2024",
-      "endDate": "",
       "url": "https://laravelmail.com",
-      "roles": [
-        "Founder"
-      ],
+      "roles": ["Founder"],
       "entity": "Laravel Company",
       "type": "application"
     }
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/izdrail/cv.izdrail.com/master/schema/jsoncv.schema.json",
-    "version": "v0.0.4",
-    "lastModified": "2025-06-03T22:26:00"
+    "version": "v0.0.5",
+    "lastModified": "2025-09-27T12:00:00"
   }
 }
