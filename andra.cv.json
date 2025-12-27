@@ -1,0 +1,145 @@
+{
+  "$schema": "https://raw.githubusercontent.com/izdrail/cv.izdrail.com/master/schema/jsoncv.schema.json",
+  "basics": {
+    "name": "Andra-Lorena Gradinaru",
+    "label": "Senior Healthcare Professional & Team Lead",
+    "email": "andragradinaru90@gmail.com",
+    "phone": "+44 7387 885677",
+    "url": null,
+    "summary": "Dedicated Healthcare Professional with over five years of experience in clinical care settings, specializing in elderly care and mental health support. Combines high-level person-centred care with a strong academic background in Business Management and Teaching. Proven track record in supervising multidisciplinary teams, ensuring regulatory compliance (CQC standards), and advocating for resident dignity. Expert in managing complex care plans while maintaining the highest standards of confidentiality and professional ethics.",
+    "location": {
+      "address": "38 Deidre Avenue",
+      "postalCode": "SS12 0AX",
+      "city": "London",
+      "countryCode": "GB",
+      "country": "United Kingdom"
+    }
+  },
+  "work": [
+    {
+      "name": "Runwood Homes Ltd",
+      "location": "Wickford, United Kingdom",
+      "position": "Senior Care Assistant",
+      "startDate": "2023-01-01",
+      "endDate": null,
+      "summary": "Delivering specialized personal and mental health support within a high-standard residential environment.",
+      "highlights": [
+        "Execute tailored care interventions for vulnerable residents, ensuring emotional and physical well-being.",
+        "Facilitate risk assessments and care plan implementations for individuals with complex mental health needs.",
+        "Uphold rigorous safeguarding protocols and clinical governance to ensure resident safety and privacy."
+      ]
+    },
+    {
+      "name": "Abbotsleigh Mews",
+      "location": "Sidcup, United Kingdom",
+      "position": "Senior Care Assistant",
+      "startDate": "2019-01-01",
+      "endDate": "2022-10-01",
+      "summary": "Leadership role focused on operational excellence, staff supervision, and quality assurance.",
+      "highlights": [
+        "Directed daily operations and supervised a team of care assistants to maintain high service standards.",
+        "Conducted regular quality audits and 'spot checks' to ensure full compliance with health and social care regulations.",
+        "Championed person-centred care initiatives that enhanced resident independence and quality of life."
+      ]
+    },
+    {
+      "name": "Bupa Care Services",
+      "location": "Sidcup, United Kingdom",
+      "position": "Senior Care Assistant",
+      "startDate": "2018-11-01",
+      "endDate": "2019-01-01",
+      "summary": "Coordinated resident care and administrative documentation within a leading private healthcare provider.",
+      "highlights": [
+        "Managed comprehensive care records and performed service user reviews to ensure evolving needs were met.",
+        "Mentored junior staff on clinical protocols, professional conduct, and efficient personal care delivery.",
+        "Liaised with families and medical professionals to coordinate holistic care strategies."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Mont Rose College of Management and Sciences",
+      "area": "Teaching and Training",
+      "studyType": "Professional Diploma",
+      "startDate": "2023-09-01",
+      "endDate": "2024-07-01"
+    },
+    {
+      "institution": "Buckinghamshire New University",
+      "area": "Business Management",
+      "studyType": "Professional Degree",
+      "startDate": "2022-09-01",
+      "endDate": "2023-06-01"
+    },
+    {
+      "institution": "Mont Rose College of Management and Sciences",
+      "area": "Business Marketing",
+      "studyType": "Professional Diploma",
+      "startDate": "2020-09-01",
+      "endDate": "2022-07-01"
+    },
+    {
+      "institution": "L.T. Mihai Eminescu",
+      "location": "Bârlad, Romania",
+      "area": "Computer Science",
+      "studyType": "Secondary School Certificate",
+      "startDate": "2005-09-01",
+      "endDate": "2009-07-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Clinical & Social Care",
+      "level": "Expert",
+      "keywords": [
+        "CQC Compliance",
+        "Risk Assessment",
+        "Dementia & Mental Health Support",
+        "Person-Centred Care Planning",
+        "Safeguarding Adults",
+        "Clinical Governance"
+      ]
+    },
+    {
+      "name": "Management & Leadership",
+      "level": "Advanced",
+      "keywords": [
+        "Team Supervision",
+        "Performance Auditing",
+        "Strategic Planning",
+        "Staff Training & Mentorship",
+        "Operational Oversight"
+      ]
+    },
+    {
+      "name": "Operational Compliance",
+      "level": "Advanced",
+      "keywords": [
+        "Health & Safety (COSHH)",
+        "Facility Management",
+        "Quality Assurance",
+        "Documentation & Reporting"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Professional Working Proficiency"
+    },
+    {
+      "language": "Romanian",
+      "fluency": "Native"
+    }
+  ],
+  "interests": [
+    "Community Volunteering",
+    "Health and Fitness",
+    "Professional Development",
+    "Cultural Studies"
+  ],
+  "meta": {
+    "version": "1.1.1",
+    "lastModified": "2025-12-27T00:00:00Z"
+  }
+}
