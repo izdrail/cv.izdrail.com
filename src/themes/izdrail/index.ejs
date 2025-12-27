@@ -1,268 +1,398 @@
-<%
-function linkInDiv(url) {
-  if (!url) return ''
-  return `<div class="url row"><a href="${url}" target="_blank">${fn.noSchemaURL(url)}</a></div>`
-}
-%>
-<%
-function formatLocation(loc) {
-  const cityToCountry = ['city', 'postalCode', 'region', 'countryCode'].map(key => loc[key]).filter(v => v).join(', ')
-  if (!loc.address) return cityToCountry
-  return `${loc.address}. ${cityToCountry}`
-}
-%>
-<%
-function hasItems(arr) {
+<% function linkInDiv(url) { if (!url) return '' ; return `<div class="url row"><a href="${url}"
+    target="_blank">${fn.noSchemaURL(url)}</a></div>`;
+  }
+
+  function formatLocation(loc) {
+  const cityToCountry = ['city', 'postalCode', 'region', 'countryCode'].map(key => loc[key]).filter(v => v).join(', ');
+  if (!loc.address) return cityToCountry;
+  return `${loc.address}. ${cityToCountry}`;
+  }
+
+  function hasItems(arr) {
   return !!(arr && arr.length);
-}
-%>
+  }
 
-<section class="basics-section">
-    <div class="row">
-        <div class="col-6" style="float: left;">
-             <h1><%= cv.basics.name %></h1>
-         </div>
-        <div class="col-6" style="float: right;">
-            <img width="100" height="100" style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/2276408"  class="user-picture" alt="pdf image">
-        </div>
-     </div>
-
-    <div style="clear: both;" class="clear"></div>
-
-    <% if (cv.basics.label) { %>
-        <div class="label row subtitle"><%= cv.basics.label %></div>
-    <% } %>
-    <% if (cv.basics.url) { %>
-        <div class="url row">
-            <%- fn.getIconSVG('mdi:link-variant') %>
-            <a href="<%= cv.basics.url %>" target="_blank"><%= fn.noSchemaURL(cv.basics.url) %></a>
-        </div>
-    <% } %>   
-    <% if (cv.basics.summary) { %>
-        <div class="summary p"><%- fn.renderMarkdown(cv.basics.summary) %></div>
-    <% } %>
-    <div class="contact row">
-        <% if (cv.basics.email) { %>
-            <div class="item">
-                <%- fn.getIconSVG('mdi:email') %>
-                <span><a href="mailto:<%= cv.basics.email %>"><%= cv.basics.email %></a></span>
-            </div>
-        <% } %>
-        <% if (cv.basics.phone) { %>
-            <div class="item">
-                <%- fn.getIconSVG('mdi:phone') %>
-                <span><%= cv.basics.phone %></span>
-            </div>
-        <% } %>
-        <% if (cv.basics.location) { %>
-            <div class="item">
-                <%- fn.getIconSVG('mdi:location') %>
-                <span><%= formatLocation(cv.basics.location) %></span>
-            </div>
-        <% } %>
-    </div>
-</section>
-
-
-<%
-function dateRange(item, level) {
-  let {startDate, endDate} = item
-  if (!startDate && !endDate) return ''
-  let format
-  // level: 1: year, 2: month, 3: day
+  function dateRange(item, level) {
+  let {startDate, endDate} = item;
+  if (!startDate && !endDate) return '';
+  let format;
   switch (level) {
-    case 1:
-      format = 'YYYY'
-      break;
-    case 2:
-      format = 'MMM YYYY'
-      break;
+  case 1: format = 'YYYY'; break;
+  case 2: format = 'MMM YYYY'; break;
   }
   if (format) {
-    startDate = startDate ? fn.reformatDate(startDate, format) : ''
-    endDate = endDate ? fn.reformatDate(endDate, format) : ''
+  startDate = startDate ? fn.reformatDate(startDate, format) : '';
+  endDate = endDate ? fn.reformatDate(endDate, format) : '';
   }
-  let result = ''
+  let result = '';
   if (startDate && endDate) {
-    result = `${startDate} – ${endDate}`
+  result = `${startDate} – ${endDate}`;
   } else if (startDate) {
-    result = `${startDate} – Present`
+  result = `${startDate} – Present`;
   } else if (endDate) {
-    result = `Until ${endDate}`
+  result = `Until ${endDate}`;
   }
-  return `<div class="date-range">${result}</div>`
-}
-%>
+  return `<div class="date-range">${result}</div>`;
+  }
+  %>
 
-
-<!-- Work -->
-<% if (hasItems(cv.work)) { %>
-<section class="work-section">
-  <div class="section-title">
-    <h2>Work</h2>
-    <div class="line"></div>
-  </div>
-  <% for (const item of cv.work) { %>
-    <div class="work section-item">
-      <div class="row space-between">
-        <h3><%= item.name %></h3>
-        <%- linkInDiv(item.url) %>
-      </div>
-      <div class="row space-between">
-        <div class="position subtitle"><%= item.position %></div>
-        <%- dateRange(item, 2) %>
-      </div>
-      <div class="summary p"><%- fn.renderMarkdown(item.summary) %></div>
-      <% if (item.highlights && item.highlights.length > 0) { %>
-        <div class="highlights row">
-          <ul>
-          <% for (const hl of item.highlights) { %>
-            <li><%- fn.renderMarkdown(hl, true) %></li>
-          <% } %>
-          </ul>
-        </div>
-      <% } %>
+  <section class="basics-section">
+    <div class="row">
+      <h1>
+        <%= cv.basics.name %>
+      </h1>
     </div>
-  <% } %>
-</section>
-<% } %>
 
-<!-- Projects -->
-<% if (hasItems(cv.projects)) { %>
-<section class="projects-section">
-  <div class="section-title">
-    <h2>Projects</h2>
-    <div class="line"></div>
-  </div>
-  <% for (const item of cv.projects) { %>
-    <div class="project section-item">
-      <div class="row space-between">
-        <h3 title="<%= item.name %>"><%= item.name %></h3>
-        <%- linkInDiv(item.url) %>
+    <% if (cv.basics.label) { %>
+      <div class="label row subtitle">
+        <%= cv.basics.label %>
       </div>
-      <div class="row space-between">
-        <% if (item.roles && item.roles.length > 0) { %>
-          <div class="roles subtitle"><%= item.roles.join(', ') %></div>
-        <% } %>
-        <%- dateRange(item, 2) %>
-      </div>
-      <div class="row _text-dim"><%- fn.renderMarkdown(item.description, true) %></div>
-      <% if (item.highlights && item.highlights.length > 0) { %>
-        <% if (item.highlights.length === 1) { %>
-          <div class="highlights p"><%- fn.renderMarkdown(item.highlights[0], true) %></div>
-        <% } else { %>
-          <div class="highlights row">
-            <ul>
-            <% for (const hl of item.highlights) { %>
-              <li><%- fn.renderMarkdown(hl, true) %></li>
-            <% } %>
-            </ul>
+      <% } %>
+
+        <% if (cv.basics.url) { %>
+          <div class="url row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              style="display: inline; vertical-align: middle; margin-right: 4px;">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+            </svg>
+            <a href="<%= cv.basics.url %>" target="_blank">
+              <%= fn.noSchemaURL(cv.basics.url) %>
+            </a>
           </div>
-        <% } %>
-      <% } %>
-      <div class="keywords row">
-        <% for (const kw of item.keywords) { %>
-          <span class="item"><%= kw %></span>
-        <% } %>
-      </div>
-    </div>
-  <% } %>
-</section>
-<% } %>
+          <% } %>
 
+            <% if (cv.basics.summary) { %>
+              <div class="summary p"><%- fn.renderMarkdown(cv.basics.summary) %></div>
+              <% } %>
 
-<!-- Educations -->
-<% if (hasItems(cv.education)) { %>
-<section class="education-section">
-  <div class="section-title">
-    <h2>Educations</h2>
-    <div class="line"></div>
-  </div>
-  <% for (const item of cv.education) { %>
-    <div class="education section-item">
-      <div class="row space-between">
-        <h3><%= item.institution %></h3>
-        <%- linkInDiv(item.url) %>
+                <div class="contact row">
+                  <% if (cv.basics.email) { %>
+                    <div class="item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="display: inline; vertical-align: middle; margin-right: 4px;">
+                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        <path d="m22 7-10 5L2 7"></path>
+                      </svg>
+                      <span><a href="mailto:<%= cv.basics.email %>">
+                          <%= cv.basics.email %>
+                        </a></span>
+                    </div>
+                    <% } %>
+
+                      <% if (cv.basics.location) { %>
+                        <div class="item">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 4px;">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                          </svg>
+                          <span>
+                            <%= formatLocation(cv.basics.location) %>
+                          </span>
+                        </div>
+                        <% } %>
+
+                          <% if (cv.basics.profiles && cv.basics.profiles.length> 0) { %>
+                            <% for (const profile of cv.basics.profiles) { %>
+                              <% if (profile.network==='LinkedIn' ) { %>
+                                <div class="item">
+                                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2"
+                                    style="display: inline; vertical-align: middle; margin-right: 4px;">
+                                    <path
+                                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                  </svg>
+                                  <span><a href="<%= profile.url %>" target="_blank">
+                                      <%= profile.username %>
+                                    </a></span>
+                                </div>
+                                <% } %>
+                                  <% if (profile.network==='GitHub' ) { %>
+                                    <div class="item">
+                                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2"
+                                        style="display: inline; vertical-align: middle; margin-right: 4px;">
+                                        <path
+                                          d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.603-3.369-1.343-3.369-1.343-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.544 2.914 1.186.092-.923.35-1.544.637-1.9-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z">
+                                        </path>
+                                      </svg>
+                                      <span><a href="<%= profile.url %>" target="_blank">
+                                          <%= profile.username %>
+                                        </a></span>
+                                    </div>
+                                    <% } %>
+                                      <% } %>
+                                        <% } %>
+                </div>
+  </section>
+
+  <!-- Work Experience -->
+  <% if (hasItems(cv.work)) { %>
+    <section class="work-section">
+      <div class="section-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          style="display: inline; vertical-align: middle; margin-right: 8px;">
+          <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"></path>
+          <path d="M12 12v-2m0 0V8m0 4v2m0 0v2"></path>
+          <line x1="9" y1="12" x2="15" y2="12"></line>
+        </svg>
+        <h2>Work Experience</h2>
+        <div class="line"></div>
       </div>
-      <div class="row space-between">
-        <div class="study subtitle">
-          <%= item.studyType %>, <%= item.area %>
+      <% for (const item of cv.work) { %>
+        <div class="work section-item">
+          <div class="row space-between">
+            <div>
+              <h3>
+                <%= item.name %>
+              </h3>
+              <% if (item.location) { %>
+                <div class="location subtitle">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    style="display: inline; vertical-align: middle; margin-right: 4px;">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <%= item.location %>
+                </div>
+                <% } %>
+            </div>
+            <%- linkInDiv(item.url) %>
+          </div>
+          <div class="row space-between">
+            <div class="position subtitle">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                style="display: inline; vertical-align: middle; margin-right: 4px;">
+                <circle cx="12" cy="8" r="4"></circle>
+                <path d="M6 20c0-1.1 2.7-3 6-3s6 1.9 6 3"></path>
+                <path d="M9 13h1m4 0h1"></path>
+                <path d="M12 2v4m0 10v4"></path>
+              </svg>
+              <%= item.position %>
+            </div>
+            <%- dateRange(item, 2) %>
+          </div>
+          <div class="summary p"><%- fn.renderMarkdown(item.summary) %></div>
+          <% if (item.highlights && item.highlights.length> 0) { %>
+            <div class="highlights row">
+              <ul>
+                <% for (let i=0; i < Math.min(item.highlights.length, 3); i++) { %>
+                  <li><%- fn.renderMarkdown(item.highlights[i], true) %></li>
+                  <% } %>
+              </ul>
+            </div>
+            <% } %>
         </div>
-        <%- dateRange(item, 2) %>
-      </div>
-      <% if (item.score) { %><div class="score row">Overall GPA: <%= item.score %></div><% } %>
-      <% if (item.courses && item.courses.length > 0) { %>
-        <div class="courses row">
-          Courses: <%= item.courses.join('; ') %>
+        <% } %>
+    </section>
+    <% } %>
+
+      <!-- Projects -->
+      <% if (hasItems(cv.projects)) { %>
+        <section class="projects-section">
+          <div class="section-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              style="display: inline; vertical-align: middle; margin-right: 8px;">
+              <path d="M9 3L5 7v10c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V7l-4-4"></path>
+              <path d="M12 8v4m-2-2h4"></path>
+              <circle cx="12" cy="17" r="1"></circle>
+            </svg>
+            <h2>Projects</h2>
+            <div class="line"></div>
+          </div>
+          <% for (const item of cv.projects) { %>
+            <div class="project section-item">
+              <div class="row space-between">
+                <div>
+                  <h3 title="<%= item.name %>">
+                    <%= item.name %>
+                  </h3>
+                  <% if (item.location) { %>
+                    <div class="location subtitle">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="display: inline; vertical-align: middle; margin-right: 4px;">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      <%= item.location %>
+                    </div>
+                    <% } %>
+                </div>
+                <%- linkInDiv(item.url) %>
+              </div>
+              <div class="row space-between">
+                <% if (item.roles && item.roles.length> 0) { %>
+                  <div class="roles subtitle">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      style="display: inline; vertical-align: middle; margin-right: 4px;">
+                      <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"></path>
+                      <line x1="2" y1="12" x2="22" y2="12"></line>
+                    </svg>
+                    <%= item.roles.join(', ') %>
+            </div>
+          <% } %>
+          <%- dateRange(item, 2) %>
         </div>
-      <% } %>
-    </div>
-  <% } %>
-</section>
-<% } %>
-<!-- Skills -->
-<% if (hasItems(cv.skills)) { %>
-<section class="skills-section">
-  <div class="section-title">
-    <h2>Skills</h2>
-    <div class="line"></div>
-  </div>
-  <div class="two-columns">
-  <% for (const item of cv.skills) { %>
-    <div class="skill section-item">
-      <h3><%= item.name %></h3>
-      <div class="level row subtitle"><%= item.level %></div>
-      <% if (item.summary) { %>
-        <div class="summary p"><%- fn.renderMarkdown(item.summary) %></div>
-      <% } %>
-      <% if (item.keywords && item.keywords.length > 0) { %>
-        <div class="keywords">
+        <div class="row _text-dim"><%- fn.renderMarkdown(item.description, true) %></div>
+        <% if (item.highlights && item.highlights.length > 0) { %>
+          <% if (item.highlights.length === 1) { %>
+            <div class="highlights p"><%- fn.renderMarkdown(item.highlights[0], true) %></div>
+          <% } else { %>
+            <div class="highlights row">
+              <ul>
+                <% for (let i = 0; i < Math.min(item.highlights.length, 3); i++) { %>
+                  <li><%- fn.renderMarkdown(item.highlights[i], true) %></li>
+                <% } %>
+              </ul>
+            </div>
+          <% } %>
+        <% } %>
+        <div class="keywords row">
           <% for (const kw of item.keywords) { %>
             <span class="item"><%= kw %></span>
           <% } %>
         </div>
+      </div>
+    <% } %>
+  </section>
+<% } %>
+
+<!-- Education -->
+<% if (hasItems(cv.education)) { %>
+  <section class="education-section">
+    <div class="section-title">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 8px;">
+        <path d="M22 10v6m0 0l-8.97 4.74a2 2 0 0 1-1.94 0L2 16v-6m20 0L12 3 2 10m0 0v6m0 0l8.97 4.74a2 2 0 0 0 1.94 0L22 16"></path>
+      </svg>
+      <h2>Education</h2>
+      <div class="line"></div>
+    </div>
+    <% for (const item of cv.education) { %>
+      <div class="education section-item">
+        <div class="row space-between">
+          <div>
+            <h3><%= item.institution %></h3>
+            <% if (item.location) { %>
+              <div class="location subtitle">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 4px;">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <%= item.location %>
+              </div>
+            <% } %>
+          </div>
+          <%- linkInDiv(item.url) %>
+        </div>
+        <div class="row space-between">
+          <div class="study subtitle">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 4px;">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              <path d="M8 7h8M8 11h8M8 15h4"></path>
+            </svg>
+            <%= item.studyType %>, <%= item.area %>
+          </div>
+          <%- dateRange(item, 2) %>
+        </div>
+        <% if (item.score) { %>
+          <div class="score row">Overall GPA: <%= item.score %></div>
+        <% } %>
+        <% if (item.courses && item.courses.length > 0) { %>
+          <div class="courses row">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 4px;">
+              <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"></path>
+              <path d="M12 12v-2m0 0V8m0 4v2"></path>
+            </svg>
+            Courses: <%= item.courses.join(' ; ') %>
+          </div>
+        <% } %>
+      </div>
+    <% } %>
+  </section>
+<% } %>
+
+<!-- Skills -->
+<% if (hasItems(cv.skills)) { %>
+  <section class="skills-section">
+    <div class="section-title">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 8px;">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+      </svg>
+      <h2>Skills</h2>
+      <div class="line"></div>
+    </div>
+    <div class="two-columns">
+      <% for (const item of cv.skills) { %>
+        <div class="skill section-item">
+          <h3>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 4px;">
+              <polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3"></polyline>
+              <line x1="12" y1="12" x2="20" y2="7.5"></line>
+              <line x1="12" y1="12" x2="12" y2="21"></line>
+              <line x1="12" y1="12" x2="4" y2="7.5"></line>
+            </svg>
+            <%= item.name %>
+          </h3>
+          <div class="level row subtitle"><%= item.level %></div>
+          <% if (item.summary) { %>
+            <div class="summary p"><%- fn.renderMarkdown(item.summary) %></div>
+          <% } %>
+          <% if (item.keywords && item.keywords.length > 0) { %>
+            <div class="keywords">
+              <% for (const kw of item.keywords) { %>
+                <span class="item"><%= kw %></span>
+              <% } %>
+            </div>
+          <% } %>
+        </div>
       <% } %>
     </div>
-  <% } %>
-  </div>
-</section>
+  </section>
 <% } %>
 
 <!-- Languages -->
 <% if (hasItems(cv.languages)) { %>
-<section class="languages-section page-unit">
-  <div class="section-title">
-    <h2>Languages</h2>
-    <div class="line"></div>
-  </div>
-  <% for (const item of cv.languages) { %>
-    <div class="language section-item">
-      <h3><%= item.language %></h3>
-      <div class="fluency row subtitle"><%= item.fluency %></div>
-      <% if (item.summary) { %>
-        <div class="summary p"><%- fn.renderMarkdown(item.summary) %></div>
-      <% } %>
+  <section class="languages-section page-unit">
+    <div class="section-title">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 8px;">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        <path d="M2 12h20"></path>
+      </svg>
+      <h2>Languages</h2>
+      <div class="line"></div>
     </div>
-  <% } %>
-</section>
+    <% for (const item of cv.languages) { %>
+      <div class="language section-item">
+        <h3>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 4px;">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            <path d="M8 10h.01M12 10h.01M16 10h.01"></path>
+          </svg>
+          <%= item.language %>
+        </h3>
+        <div class="fluency row subtitle"><%= item.fluency %></div>
+        <% if (item.summary) { %>
+          <div class="summary p"><%- fn.renderMarkdown(item.summary) %></div>
+        <% } %>
+      </div>
+    <% } %>
+  </section>
 <% } %>
 
-
-<!-- TODO: -->
-<!-- Awards -->
-<!-- Volunteer -->
-<!-- Publications -->
-<!-- References -->
-<!-- Interests -->
-
-<!-- meta -->
+<!-- Meta -->
 <% if (cv.meta) { %>
-<footer>
-  <% if (cv.meta.version) { %>
-    <div class="version">Version: <%= cv.meta.version %></div>
-  <% } %>
-  <% if (cv.meta.lastModified) { %>
-    <div class="version">Last modified: <%= cv.meta.lastModified.slice(0, 10) %></div>
-  <% } %>
-</footer>
+  <footer>
+    <% if (cv.meta.version) { %>
+      <div class="version">Version: <%= cv.meta.version %></div>
+    <% } %>
+    <% if (cv.meta.lastModified) { %>
+      <div class="version">Last modified: <%= cv.meta.lastModified.slice(0, 10) %></div>
+    <% } %>
+  </footer>
 <% } %>
