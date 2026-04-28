@@ -19,11 +19,11 @@ jobs:
           fetch-depth: 1
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
           cache: 'npm'
 
       - run: npm install
-      - run: npm run build-site
+      - run: npm run build
 
       - name: Publish
         uses: cloudflare/pages-action@v1
@@ -31,5 +31,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: jsoncv
-          directory: src/dist
+          directory: dist
           branch: master
