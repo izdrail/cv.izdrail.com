@@ -3,7 +3,7 @@ name: CF Pages
 on:
   push:
     branches:
-      - master
+      - main
     paths-ignore:
       - "README.md"
   workflow_dispatch: {}
@@ -32,4 +32,4 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: jsoncv
           directory: dist
-          branch: master
+          branch: main
